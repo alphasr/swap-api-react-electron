@@ -32,7 +32,7 @@
 
 `npm run electron-app`
 
-##Functionalities
+## Functionalities
 
 - The swapi wrapper is used to define graphql schema, it is publicly available, and provided by graphql. It is also used for making requests to the swapi API and returns the response.
 
