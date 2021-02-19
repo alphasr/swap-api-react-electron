@@ -144,26 +144,3 @@ const Characters: React.FC = () => {
 };
 
 export default Characters;
-{
-  /* <Button
-  className="mb-3 ml-3 "
-  onClick={() => {
-    const { endCursor } = data.allPeople.pageInfo;
-    fetchMore({
-      variables: { after: endCursor },
-      updateQuery: (prevResult, { fetchMoreResult }) => {
-        fetchMoreResult = produce(fetchMoreResult, (draft: unknown) => {
-          draft.allPeople.people = [
-            ...prevResult.allPeople.people,
-            ...fetchMoreResult.allPeople.people,
-          ];
-        });
-        console.log(fetchMoreResult);
-        return fetchMoreResult;
-      },
-    });
-  }}
->
-  Load More
-</Button>; */
-}
