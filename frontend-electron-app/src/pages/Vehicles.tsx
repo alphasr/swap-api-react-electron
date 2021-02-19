@@ -150,26 +150,3 @@ const Vehicles: React.FC = () => {
 };
 
 export default Vehicles;
-{
-  /* <Button
-  className="mb-3 ml-3 "
-  onClick={() => {
-    const { endCursor } = data.allVehicles.pageInfo;
-    fetchMore({
-      variables: { after: endCursor },
-      updateQuery: (prevResult, { fetchMoreResult }) => {
-        fetchMoreResult = produce(fetchMoreResult, (draft: unknown) => {
-          draft.allVehicles.vehicles = [
-            ...prevResult.allVehicles.vehicles,
-            ...fetchMoreResult.allVehicles.vehicles,
-          ];
-        });
-        console.log(fetchMoreResult);
-        return fetchMoreResult;
-      },
-    });
-  }}
->
-  Load More
-</Button>; */
-}
