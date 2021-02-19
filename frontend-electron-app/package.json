@@ -8,12 +8,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:electron": "cross-env NODE_ENV=development webpack --config webpack.electron.config.js --mode development && electron .",
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js",
-    "dev:react": "cross-env NODE_ENV=development webpack serve --config webpack.react.config.js --mode development"
+    "dev:react": "cross-env NODE_ENV=development webpack serve --config webpack.react.config.js --mode development",
+    "electron-app": "concurrently --kill-others \"npm run dev:react\" \"npm run dev:electron\""
   },
   "author": "Nilay Baranwal",
   "license": "ISC",
   "devDependencies": {
     "babel-loader": "^8.2.2",
+    "concurrently": "^5.3.0",
     "cross-env": "^7.0.3",
     "css-loader": "^5.0.2",
     "electron": "^11.2.3",
